@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>This is resume builder website</h1>
-        <p>hello</p>
+        <p>hello one </p>
       </header>
     </div>
   );
