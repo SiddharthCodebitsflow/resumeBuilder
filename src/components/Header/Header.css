@@ -8,6 +8,7 @@
     padding: 15px;
     box-sizing: border-box;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 img {
     height: 120%;
@@ -56,3 +57,73 @@ img {
       align-items: center;
     }
   }
+
+  .menu a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: 0.15s ease-in-out;
+}
+
+.menu a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  
+}
+
+.xmark-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 60%;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu {margin-top: 40px;}
+    .menu a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
