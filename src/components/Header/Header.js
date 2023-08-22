@@ -5,7 +5,7 @@ function Header() {
   return (
       <div className="nav-section">
         <div className='logo'>
-          <h1>logo</h1>
+          <img src="logo-2.png" alt="" />
         </div>
         <div className="menu">
           <a>Resume Template</a>
