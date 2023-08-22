@@ -1,3 +1,90 @@
+
 .footer{
-    display: flex;
+    width: 100%;
+    padding:3rem 0 ;
+    background-color: rgb(10, 20, 53);
+    color: white;
 }
+
+
+
+
+.footer-container { 
+    max-width: 2000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 40px;
+ } 
+
+
+
+
+ .first{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+
+ .second{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+
+ .email{
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    padding-left: 5rem;
+ }
+
+ .btn{
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(98, 84, 243);
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+ }
+
+ .third{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+
+ .social{
+    font-size: 35px;
+    display: flex;
+    gap: 15px;
+ }
+
+
+ .fourth{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+
+ .lower-footer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 40px;
+ }
+
+
+ .lower-left{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    
+ }
+ 
+ .lower-right{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+ 
