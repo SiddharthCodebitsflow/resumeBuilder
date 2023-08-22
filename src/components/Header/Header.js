@@ -9,8 +9,10 @@ function Header() {
         </div>
         <div className="menu">
           <a>Resume Template</a>
-          <a>Resume Template</a>
-          <a>Resume Template</a>
+          <a>CV Templates</a>
+          <a>Cover Letters</a>
+          <a>Plans and pricing</a>
+          <a>Learn</a>
         <button className='nav-text'>Register</button>
         <button className='nav-text'>Sign In</button>
         </div>
