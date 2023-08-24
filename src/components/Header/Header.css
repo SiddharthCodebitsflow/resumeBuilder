@@ -40,7 +40,13 @@ img {
     max-height: fit-content;
     align-items: center;
     padding: 5px 20px 5px 20px;
+    width: 120px;
+    transition: width 1s;
 }
+
+
+
+
 /* 
 .nav-slide {
     display: flex;
@@ -62,10 +68,23 @@ img {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    transition: 0.15s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    font-size: 19px;
+    cursor: pointer;
     position: relative;
     text-transform: uppercase;
+    color: black;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+   
 }
+
+
+
+.menu a:hover {
+    color: rgb(126, 54, 189); 
+}
+
 
 .menu a::after {
     content: "";
@@ -108,6 +127,7 @@ img {
     display: none;
   }
 
+
 #check {display: none;}
 @media(max-width: 610px){
     .menu {
@@ -127,3 +147,9 @@ img {
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
+
+
+/* 
+.menu-compo{
+    color: white;
+} */
