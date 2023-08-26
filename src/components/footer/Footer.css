@@ -1,4 +1,4 @@
-
+/* 
 .footer{
     width: 100%;
     padding:3rem 0 ;
@@ -86,5 +86,95 @@
     margin: auto;
     width: 50%;
     padding: 10px;
+ }
+  */
+  /* Footer Container */
+.footer {
+   background-color: rgb(10, 20, 53);
+   color: white;
+   padding: 30px 0;
+ }
+ 
+ /* Footer Grid */
+ .footer-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+ }
+ 
+ /* Responsive Grid for Footer Sections */
+ @media screen and (min-width: 768px) {
+   .footer-container {
+     grid-template-columns: repeat(4, 1fr);
+   }
+ }
+ 
+ /* Footer Sections */
+ .first,
+ .second,
+ .third,
+ .fourth {
+   text-align: center;
+ }
+ 
+ /* Subscribe Input and Button */
+ .email {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: none;
+ }
+ 
+ .btn {
+   background-color: #f39c12;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+ 
+ /* Social Icons */
+ .social {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin-top: 10px;
+ }
+ 
+ /* Lower Footer */
+ .lower-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 20px auto 0;
+   padding: 0 20px;
+ }
+ 
+ .lower-left,
+ .lower-right {
+   text-align: center;
+ }
+ 
+ /* Adjustments for Mobile */
+ @media screen and (max-width: 767px) {
+   .first,
+   .second,
+   .third,
+   .fourth {
+     text-align: left;
+   }
+ 
+   .lower-footer {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .lower-right {
+     margin-top: 10px;
+   }
  }
  
